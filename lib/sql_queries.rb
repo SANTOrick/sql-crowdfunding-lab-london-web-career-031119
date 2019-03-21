@@ -21,6 +21,6 @@ WHERE category == 'music'"
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
-"SELECT category, amount FROM projects JOIN pledges ON pledges.project_id - projects.id
+"SELECT category, amount FROM pledges JOIN projects ON projects.id - pledges.projects_id
 WHERE category = 'books'"
 end
